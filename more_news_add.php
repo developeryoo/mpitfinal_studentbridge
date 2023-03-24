@@ -1,4 +1,8 @@
 <?php 
+    session_start();
+    if (!$_SESSION['user']) {
+        header('Location: /ustumsuufinal/login.php');
+    }
 	$conn = mysqli_connect('localhost', 'root','', 'studentbridge');
 ?>
 <!DOCTYPE html>
@@ -28,7 +32,8 @@
             </nav>
 
             <button class="header__button">
-                <a href="#">Логин</a>
+                <a href="login.php"><?= $_SESSION['user']['login'] ?></a>
+                <a href="/ustumsuufinal/vendor/logout.php" class="logout">Выход</a>
             </button>
         </header>
     </div>
