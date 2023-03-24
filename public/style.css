@@ -175,7 +175,8 @@ p, ul {
     flex-wrap: wrap;
 }
 .section__activist {
-    background: url("/img/activ.png") center no-repeat;
+    background: url('/ustumsuufinal/img/123.png') center no-repeat;
+    background-size: cover;
     width: 30%;
     color: #fff;
     margin: 5px;
@@ -442,4 +443,74 @@ p, ul {
     border: 2px solid #FF0000 !important;
     color: #FF0000;
     transition: 0.3s;
+}
+
+
+.none {
+    display: none;
+}
+
+
+
+.msg {
+    color: #FF0000 !important;
+}
+.error {
+    color: #FF0000 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* АДАПТАЦИЯ */
+@media (max-width: 770px) {
+    .right {
+        display: none;
+    }
+    .login__left__logo {
+        width: 50%;
+    }
+    .rass {
+        display: block;
+        max-width: 500px;
+    }
+    .rass p {
+        font-size: 15px;
+        max-width: 200px;
+        margin-bottom: 15px !important;
+    }
+    .footer {
+        display: none;
+    }
+    .intro__inner__right {
+        display: none;
+    }
+    .navbar {
+        display: none !important;
+    }
+    .header__logo {
+        width: 40%;
+    }
+    .section__activites {
+        display: block;
+    }
+    .section__activist {
+        width: 100%;
+    }
+    .section__activist h1 {
+        margin: 0;
+    }
+    .newsall__block {
+        display: block;
+    }
 }
